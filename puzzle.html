@@ -6,32 +6,32 @@
 	<link rel=stylesheet type=text/css href=style/penguins.css />
 	<script type=text/javascript src=js/jquery-1.8.3.js></script>
 	<script type=text/javascript src=js/penguins.js></script>
+	<link href='http://fonts.googleapis.com/css?family=Homemade+Apple' rel='stylesheet' type='text/css'>
     </head>
 
     <body onload=startgame()>
+	<div id=table>
+	    <div id=mainboard>
+		<div id=cardset>
+		</div>
 
-	<div id=cardset>
+		<button onclick=startgame() class=restart>clear and reshuffle</button>
+
+		<div id=paper>
+		    Score:
+			<div class=segment id=score>
+			</div>
+		    <br />
+		    Tries:
+			<div class=segment id=tries>
+			</div>
+		    <br />
+		    Which penguins have you identified?
+			<div id=penguins>
+			</div>
+		</div>
+	    </div>
 	</div>
-
-	<button onclick=startgame()>clear and reshuffle</button>
-
-	<p>
-	Score:
-	<div id=score>
-	</div>
-	</p>
-
-	<p>
-	Tries:
-	<div id=tries>
-	</div>
-	</p>
-
-	<p>
-	Which penguins have you identified?
-	<div id=penguins>
-	</div>
-	</p>
 
     </body>
 

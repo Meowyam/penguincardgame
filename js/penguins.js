@@ -74,9 +74,9 @@ function startgame() {
     }
 
     function listpenguins(penguin) {
-    var penguin = penguin.slice(0,-1);
-    var cappenguin = penguin.substr(0,1).toUpperCase()+penguin.substr(1);
-    $("#penguins").append("<p>" + cappenguin + "</p>");
+	var penguin = penguin.slice(0,-1);
+	var cappenguin = penguin.substr(0,1).toUpperCase()+penguin.substr(1);
+	$("#penguins").append("<div class=penguinbox>" + cappenguin + "</div>");
     }
 
     function reset(wrongone,wrongtwo) {

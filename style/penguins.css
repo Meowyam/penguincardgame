@@ -1,2 +1,42 @@
-.indv_penguin {
+#mainboard {
+    width: 800px;
+    margin: 0 auto;
+    margin-top: 30px;
+    padding: 50px;
+    background-color: rgba(80,118,66,0.6);
+    border-radius: 50px;
+}
+
+.penguinbox {
+    display: inline;
+    margin: 5px 15px 0px 0px;
+}
+
+.restart {
+    border: 2px;
+    border-radius: 25px;
+    font-family: 'Homemade Apple', cursive;
+    font-size: 12pt;
+    color: rgb(243,244,236);
+    background-color: rgba(80,118,66,0.6);
+    margin: 5px;
+}
+
+.restart:hover {
+    color: black;
+}
+
+#paper {
+    border: 1px;
+    font-family: 'Homemade Apple', cursive; 
+    font-size: 14pt;
+    background-color: rgb(255,245,228);
+    background-image: linear-gradient(rgba(0,51,102,0.2) 30%, transparent 70%);
+    background-size: 4px 4px;
+    padding-left: 10px;
+    margin: 0px;
+}
+
+.segment {
+    display: inline;
 }

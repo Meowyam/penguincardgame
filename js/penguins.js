@@ -44,7 +44,9 @@ function startgame() {
     function swapper() {
 	$(".indv_penguin").click(function() {
 		pimg = this.id.slice(0,-1); 
-		$("#"+this.id).attr("src", "img/"+pimg+".png");
+		$("#"+this.id).animate({opacity:1},100,function() {
+		    $("#"+this.id).attr("src","img/"+pimg+".png");
+		});
 		matcher(this.id);
 		});
     }
@@ -73,9 +75,12 @@ function startgame() {
     }
 
     function reset(wrongone,wrongtwo) {
-
-	$("#"+wrongone).attr("src", "img/blank.png");
-	$("#"+wrongtwo).attr("src", "img/blank.png");
+	$("#"+wrongone).animate({opacity:1},1000,function(){
+	    $("#"+wrongone).attr("src", "img/blank.png");
+	    });
+	$("#"+wrongtwo).animate({opacity:1},1000,function(){
+	    $("#"+wrongtwo).attr("src", "img/blank.png");
+	    });
     }
 
     function win(counter) {

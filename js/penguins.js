@@ -61,6 +61,8 @@ function startgame() {
 		turns += 1;
 		comment(counter, "score");
 		comment(turns, "tries");
+		listpenguins(click1);
+//		comment(click1.slice(0,-1).substr(0,1).toUpperCase()+click1.slice(0,-1).substr(1) + "<br />", "penguins");
 		win(counter);
 	    }
 	    clicked=false;
@@ -69,6 +71,12 @@ function startgame() {
 	    clicked = true;
 	    click1 = penguin;
 	}
+    }
+
+    function listpenguins(penguin) {
+    var penguin = penguin.slice(0,-1);
+    var cappenguin = penguin.substr(0,1).toUpperCase()+penguin.substr(1);
+    $("#penguins").append("<p>" + cappenguin + "</p>");
     }
 
     function reset(wrongone,wrongtwo) {

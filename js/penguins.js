@@ -3,8 +3,7 @@ function startgame() {
     $("#tries").empty();
     $("#score").empty();
 
-    var set1 = ["emperor1", "adelie1", "gentoo1", "snares1", "chinstrap1"];
-    var set2 = ["emperor2", "adelie2", "gentoo2", "snares2", "chinstrap2"];
+    var set = ["emperor1", "adelie1", "gentoo1", "snares1", "chinstrap1","emperor2", "adelie2", "gentoo2", "snares2", "chinstrap2"];
 
     var clicked = false;
     var click1;
@@ -13,10 +12,8 @@ function startgame() {
     var turns = 0;
 
     function loadcards() {
-	set1 = shuffle(set1);
-	set2 = shuffle(set2);
-	deal('cardset1',set1);
-	deal('cardset2',set2);
+	set = shuffle(set);
+	deal('cardset',set);
     }
 
     function matchcards() {
@@ -34,10 +31,10 @@ function startgame() {
 	return setArray;
     }
 
-    function deal(carddiv,cardset) {
-	$("#"+carddiv).empty();
-	for (var i=0; i<cardset.length; i++) {
-	    $("#"+carddiv).append("<img src=img/blank.png id=" + cardset[i] + " class=indv_penguin />");
+    function deal(cardset,set) {
+	$("#"+cardset).empty();
+	for (var i=0; i<set.length; i++) {
+	    $("#"+cardset).append("<img src=img/blank.png id=" + set[i] + " class=indv_penguin />");
 	}
     }
 

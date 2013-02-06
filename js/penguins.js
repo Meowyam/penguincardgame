@@ -4,7 +4,7 @@ function startgame() {
     $("#score").empty();
     $("#penguins").empty();
 
-    var set = ["fiordland1", "fiordland2", "cape1", "cape2", "rockhopper1", "rockhopper2", "erectcrested1", "erectcrested2", "galapagos1", "galapagos2", "humboldt1", "humboldt2", "magellanic1", "magellanic2", "king1", "king2", "snares1", "snares2", "emperor1", "adelie1", "royal1","macaroni1","macaroni2","emperor2", "adelie2", "royal2"];
+    var set = ["fiordland1", "fiordland2", "gentoo1", "gentoo2", "chinstrap1", "chinstrap2", "cape1", "cape2", "rockhopper1", "rockhopper2", "erectcrested1", "erectcrested2", "galapagos1", "galapagos2", "humboldt1", "humboldt2", "magellanic1", "magellanic2", "king1", "king2", "snares1", "snares2", "emperor1", "adelie1", "royal1","macaroni1","macaroni2","emperor2", "adelie2", "royal2"];
 
     var clicked = false;
     var click1;

@@ -80,10 +80,10 @@ function startgame() {
     }
 
     function reset(wrongone,wrongtwo) {
-	$("#"+wrongone).animate({opacity:1},1000,function(){
+	$("#"+wrongone).animate({opacity:1},750,function(){
 	    $("#"+wrongone).attr("src", "img/blank.png");
 	    });
-	$("#"+wrongtwo).animate({opacity:1},1000,function(){
+	$("#"+wrongtwo).animate({opacity:1},750,function(){
 	    $("#"+wrongtwo).attr("src", "img/blank.png");
 	    });
     }

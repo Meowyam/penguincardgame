@@ -2,8 +2,9 @@ function startgame() {
 
     $("#tries").empty();
     $("#score").empty();
+    $("#penguins").empty();
 
-    var set = ["emperor1", "adelie1", "royal1","emperor2", "adelie2", "royal2"];
+    var set = ["fiordland1", "fiordland2", "cape1", "cape2", "galapagos1", "galapagos2", "humboldt1", "humboldt2", "magellanic1", "magellanic2", "king1", "king2", "snares1", "snares2", "emperor1", "adelie1", "royal1","macaroni1","macaroni2","emperor2", "adelie2", "royal2"];
 
     var clicked = false;
     var click1;
@@ -62,7 +63,6 @@ function startgame() {
 		comment(counter, "score");
 		comment(turns, "tries");
 		listpenguins(click1);
-//		comment(click1.slice(0,-1).substr(0,1).toUpperCase()+click1.slice(0,-1).substr(1) + "<br />", "penguins");
 		win(counter);
 	    }
 	    clicked=false;

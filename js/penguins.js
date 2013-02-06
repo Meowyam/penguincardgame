@@ -3,7 +3,7 @@ function startgame() {
     $("#tries").empty();
     $("#score").empty();
 
-    var set = ["emperor1", "adelie1", "gentoo1", "snares1", "chinstrap1","emperor2", "adelie2", "gentoo2", "snares2", "chinstrap2"];
+    var set = ["emperor1", "adelie1", "royal1","emperor2", "adelie2", "royal2"];
 
     var clicked = false;
     var click1;

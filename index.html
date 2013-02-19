@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+	<title>There are many types of Penguin - a penguin memory game.</title>
+	<link rel=stylesheet type=text/css href=style/penguins.css />
+	<script type=text/javascript src=http://code.jquery.com/jquery-1.9.1.min.js></script>
+	<script type=text/javascript src=js/penguins.js></script>
+	<link href='http://fonts.googleapis.com/css?family=Homemade+Apple' rel='stylesheet' type='text/css'>
+	<script type="text/javascript">
+
+	    var _gaq = _gaq || [];
+	    _gaq.push(['_setAccount', 'UA-38323039-1']);
+	      _gaq.push(['_trackPageview']);
+
+	    (function() {
+	    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+	    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+	    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	    })();
+
+	  </script>
+    </head>
+
+    <body onload=startgame()>
+	
+	<div id=backtag>
+	    <div class=arrow>
+	    </div>
+	</div>
+	
+	<div id=table>
+	    <div id=mainboard>
+		<div id=cardset>
+		</div>
+		<div id=paper>
+	
+		    <button onclick=startgame() class=restart>restart</button>
+
+		    Score:
+			<div class=segment id=score>
+			</div>
+		    <br />
+		    Tries:
+			<div class=segment id=tries>
+			</div>
+		    <br />
+		    Which penguins have you identified?
+			<div id=penguins class=segment>
+			</div>
+		</div>
+	    </div>
+	</div>
+
+    </body>
+
+</html>
+
+
+

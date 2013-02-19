@@ -89,7 +89,7 @@ function startgame() {
     }
 
     function win(counter) {
-    	if (counter === 5) { comment("All the penguins! Yay you win!", "score"); }
+    	if (counter === 15) { comment("All the penguins! Yay you win!", "score"); }
 	else return;
     }
 
@@ -98,5 +98,10 @@ function startgame() {
     }
 
     matchcards();
+
+    $("#backtag").click(
+	function() {
+	window.location = "../";
+    });
 
 }

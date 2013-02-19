@@ -7,9 +7,9 @@ body {
 }
 
 #mainboard {
-    width: 90%;
+    width: 98%;
     margin: 0 auto;
-    padding: 20px;
+    padding: 5px;
     background-color: rgb(218,240,246);
     border-radius: 50px;
 }
@@ -59,6 +59,44 @@ body {
     display: inline;
 }
 
+#backtag {
+   margin: 0px;
+   padding: 0px;
+   border: 0px;
+   top: 0px;
+   left: 0px;
+   z-index: 101;
+   width: 25px;
+   height: 25px;
+   position: absolute;
+   background-color: rgba(198,137,72,0.3);
+   text-align: center;
+   border-top-left-radius: 0px;
+   border-top-right-radius: 8px;
+   border-bottom-right-radius: 8px;
+   border-bottom-left-radius: 0px;
+   font-weight: 900;
+}
+
+#backtag:hover {
+    background-color: rgba(198,137,72,0.5);
+}
+
+#backtag.click {
+    background-color: rgba(198,137,72,1);
+}
+
+.arrow {
+position: relative;
+width: 0px;
+height: 0px;
+margin: 0 auto;
+top: 3px;
+border-bottom: 8px solid transparent;
+border-top: 8px solid transparent;
+border-right: 8px solid rgba(198,137,72,0.5);
+}
+
 img {
     width: 145;
     height: 204;
@@ -68,4 +106,6 @@ img {
 
 .indv_penguin {
     box-shadow: 2px 2px 5px rgb(49,61,65);
+    width: 145px;
+    height: 204px;
 }
